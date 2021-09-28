@@ -2,7 +2,7 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import InfoDialog from './InfoDialog';
+import InfoDialog from '../components/InfoDialog';
 import {CircularProgress, LinearProgress} from "@material-ui/core";
 
 function App() {
@@ -61,6 +61,7 @@ function App() {
           height: "100vh" || 1200, //1920 x 1200 static 
           width: "100vw" || 1920,
         }}
+        onClick={() => setShowInfoDialog(true)} //pop up window
         >
         <img 
           className="backgroundImg"
@@ -90,6 +91,11 @@ function App() {
       </div>    
     )}
 
+     <InfoDialog
+      open = {showInfoDialog}
+      setOpen = {setShowInfoDialog} //dialog box component
+      data = {data}
+      /> 
     </>
 
   );
