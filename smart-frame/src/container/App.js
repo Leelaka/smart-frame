@@ -69,7 +69,7 @@ function App() {
           alt="background"
         />
 
-        <img className='img' src={data?.primaryImage} alt='Primary'/>
+        <img className='img' id='img' src={data?.primaryImage} alt='Primary'/>
 
         <div className="linearProgressContainer">
             <LinearProgress variant="determinate" value={progress}/>

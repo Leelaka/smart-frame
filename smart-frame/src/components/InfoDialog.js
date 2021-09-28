@@ -54,7 +54,7 @@ export default function InfoDialog({open, setOpen, data}) {
         </DialogContent>
 
         <DialogActions style={{ padding: "15px"}}>
-            <Button onClick={() => setOpen(false)} style={{ color: "#f50057" }}>
+            <Button onClick={() => setOpen(false)} style={{ color: "#f50057" }} id='back'>
             Back
             </Button>
             {/* <Button onClick={handleClose} autoFocus>
