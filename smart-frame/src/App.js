@@ -1,8 +1,8 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-// import InfoDialog from './InfoDialog';
+import InfoDialog from './InfoDialog';
 import {CircularProgress, LinearProgress} from "@material-ui/core";
 
 function App() {
@@ -88,9 +88,7 @@ function App() {
         }}>
           <CircularProgress size={100} thickness={5} />
       </div>    
-    )
-    
-    }
+    )}
 
     </>
 
